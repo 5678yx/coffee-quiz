@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>风格预览 1 - 生动多彩</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .quiz-card {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            max-width: 500px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            border: 5px solid #ff6b6b;
+        }
+        .question-number {
+            background: #4ecdc4;
+            color: white;
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #2d3436;
+            font-size: 28px;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .option {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 3px solid #f39c12;
+            font-size: 18px;
+            font-weight: bold;
+            color: #2d3436;
+        }
+        .option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .emoji {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-card">
+        <div class="question-number">问题 1/5</div>
+        <h1>周末到了!你最想做什么?</h1>
+        <div class="options">
+            <div class="option">
+                <span class="emoji">🏔️</span>
+                去徒步旅行,挑战自己
+            </div>
+            <div class="option">
+                <span class="emoji">☕</span>
+                在咖啡馆放松,享受当下
+            </div>
+            <div class="option">
+                <span class="emoji">🎉</span>
+                组织朋友聚会,分享快乐
+            </div>
+            <div class="option">
+                <span class="emoji">🧘</span>
+                瑜伽和健康美食
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>风格预览 3 - 大胆戏剧</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial Black', sans-serif;
+            background: #0a0a0a;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .quiz-card {
+            background: linear-gradient(145deg, #1a1a1a 0%, #0d0d0d 100%);
+            border-radius: 0px;
+            padding: 50px;
+            max-width: 550px;
+            box-shadow: 0 30px 80px rgba(255,255,255,0.05);
+            border: 2px solid #ff3d00;
+        }
+        .question-number {
+            color: #ff3d00;
+            font-size: 11px;
+            font-weight: 900;
+            letter-spacing: 4px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 40px;
+            line-height: 1.3;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            background: #ff3d00;
+        }
+        .option {
+            background: #1a1a1a;
+            padding: 25px 30px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 16px;
+            font-weight: 700;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 2px solid transparent;
+        }
+        .option:hover {
+            background: #ff3d00;
+            color: #0a0a0a;
+            border-color: #ff3d00;
+        }
+        .option-icon {
+            display: inline-block;
+            width: 20px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-card">
+        <div class="question-number">// QUESTION 01 // 05</div>
+        <h1>周末到了,你的选择是?</h1>
+        <div class="options">
+            <div class="option">
+                <span class="option-icon">→</span>
+                徒步旅行 · 挑战极限
+            </div>
+            <div class="option">
+                <span class="option-icon">→</span>
+                咖啡馆 · 享受时光
+            </div>
+            <div class="option">
+                <span class="option-icon">→</span>
+                朋友聚会 · 分享快乐
+            </div>
+            <div class="option">
+                <span class="option-icon">→</span>
+                瑜伽健身 · 健康生活
+            </div>
+        </div>
+    </div>
+</body>
+</html>

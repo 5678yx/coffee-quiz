@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>风格预览 4 - 温馨舒适</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(180deg, #f5e6d3 0%, #e8d4c4 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .quiz-card {
+            background: linear-gradient(145deg, #fff9f5 0%, #fff5ee 100%);
+            border-radius: 20px;
+            padding: 45px;
+            max-width: 500px;
+            box-shadow: 0 15px 40px rgba(139, 90, 43, 0.15);
+            border: 2px solid #d4a574;
+        }
+        .question-number {
+            color: #8b5a2b;
+            font-size: 13px;
+            font-weight: normal;
+            font-style: italic;
+            margin-bottom: 25px;
+            letter-spacing: 2px;
+        }
+        h1 {
+            color: #4a3728;
+            font-size: 27px;
+            font-weight: normal;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .option {
+            background: linear-gradient(145deg, #ffffff 0%, #fdf8f3 100%);
+            padding: 20px 25px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 1px solid #e8d4c4;
+            font-size: 16px;
+            color: #5c4033;
+        }
+        .option:hover {
+            background: #f5e6d3;
+            border-color: #c49a6c;
+            transform: translateX(5px);
+        }
+        .option-icon {
+            display: inline-block;
+            margin-right: 10px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-card">
+        <div class="question-number">— 问题 1 —</div>
+        <h1>美好的周末,你想怎样度过?</h1>
+        <div class="options">
+            <div class="option">
+                <span class="option-icon">🌲</span>
+                去徒步旅行,拥抱大自然
+            </div>
+            <div class="option">
+                <span class="option-icon">☕</span>
+                在咖啡馆享受悠闲时光
+            </div>
+            <div class="option">
+                <span class="option-icon">💫</span>
+                与朋友聚会,分享欢笑
+            </div>
+            <div class="option">
+                <span class="option-icon">🌿</span>
+                瑜伽冥想,照顾身心
+            </div>
+        </div>
+    </div>
+</body>
+</html>

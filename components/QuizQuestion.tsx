@@ -1,10 +1,10 @@
 'use client';
 
-import { Question } from '@/lib/quiz-data';
+import { Question, PersonalityType } from '@/lib/quiz-data';
 
 interface QuizQuestionProps {
   question: Question;
-  onAnswer: (personality: string) => void;
+  onAnswer: (personality: PersonalityType) => void;
 }
 
 export default function QuizQuestion({ question, onAnswer }: QuizQuestionProps) {
